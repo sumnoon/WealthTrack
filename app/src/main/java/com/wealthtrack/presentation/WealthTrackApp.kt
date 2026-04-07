@@ -7,6 +7,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -46,7 +47,7 @@ fun WealthTrackApp() {
                                 restoreState = true
                             }
                         },
-                        icon = { Icon(screen.icon, contentDescription = screen.title, modifier = Modifier.size(24.dp)) },
+                        icon = { Icon(painter = painterResource(id = screen.iconRes), contentDescription = screen.title, modifier = Modifier.size(24.dp)) },
                         label = {
                             Text(
                                 text = screen.title,

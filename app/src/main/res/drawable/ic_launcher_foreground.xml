@@ -4,7 +4,21 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!-- Gold "W" letterform centered in safe zone -->
     <path
-        android:fillColor="#3DDC84"
-        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+        android:fillColor="#F9A825"
+        android:pathData="M22,28 L34,82 L54,54 L74,82 L86,28 L75,28 L64,68 L54,42 L44,68 L33,28 Z"/>
+
+    <!-- Three rising dots (top-right) suggesting growth trend -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M76,20 m-3,0 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0"/>
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M84,13 m-3,0 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0"/>
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M90,7 m-3,0 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0"/>
+
 </vector>

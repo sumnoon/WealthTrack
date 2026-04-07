@@ -50,11 +50,16 @@
 - App preferences management
 
 ## App Navigation (5 Tabs)
-1. **Home** - Dashboard with feature cards
-2. **ARR Calculator** - Investment return calculator
-3. **Investment Suggestion** - 50/30/20 budget planner
-4. **Budget Tracker** - Expense tracking with alerts
-5. **Settings** - Theme and app preferences
+
+Each tab uses a custom vector icon designed to match the app's finance theme:
+
+| Tab | Icon | Description |
+|-----|------|-------------|
+| **Home** | House silhouette with door cutout | Dashboard with feature cards |
+| **ARR** | Rising bar chart with upward arrow | Investment return calculator |
+| **Invest** | Coin ring with upward arrow | 50/30/20 budget planner |
+| **Budget** | Wallet with card divider & coin slot | Expense tracking with alerts |
+| **Settings** | Three slider controls | Theme and app preferences |
 
 ## Tech Stack
 
@@ -102,6 +107,16 @@ Domain (Use Cases - Business Logic)
 Data (Room Database + SQLCipher)
 ```
 
+## App Icon
+
+The launcher icon features a gold **"W"** letterform on a dark forest green background (`#0F2318`), with three rising dots in the top-right corner representing investment growth. The icon uses Android's adaptive icon format and is fully compatible with Android 8.0+ shaped icon masks.
+
+| Element | Color | Description |
+|---------|-------|-------------|
+| Background | `#0F2318` | Dark forest green |
+| W letterform | `#F9A825` | Gold / amber |
+| Rising dots | `#FFD54F` | Light gold accent |
+
 ## Project Structure
 
 ```
@@ -113,6 +128,10 @@ WealthTrack/
 │   ├── navigation/        # Navigation setup
 │   ├── MainActivity.kt    # Main entry point
 │   └── WealthTrackApplication.kt
+├── app/src/main/res/
+│   ├── drawable/          # Custom vector icons (launcher + nav tabs)
+│   ├── mipmap-anydpi-v26/ # Adaptive launcher icon
+│   └── values/            # Colors and themes
 ├── gradle/libs.versions.toml  # Dependencies
 └── build.gradle.kts
 ```
