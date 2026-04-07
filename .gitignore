@@ -1,0 +1,58 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle build output
+.gradle/
+build/
+*/build/
+
+# Gradle wrapper binary (tracked: gradle-wrapper.properties is kept for reproducible builds)
+gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration file (SDK path - machine-specific, do not commit)
+local.properties
+
+# Proguard folder generated files
+proguard/
+
+# Log Files
+*.log
+
+# Android Studio / IntelliJ project files
+.idea/
+*.iml
+.navigation/
+captures/
+misc.xml
+deploymentTargetDropDown.xml
+compiler.xml
+gradle.xml
+workspace.xml
+.caches/
+
+# External native build
+.externalNativeBuild/
+.cxx/
+
+# Keystore files (uncomment to exclude signing keys)
+#*.jks
+#*.keystore
+
+# macOS
+.DS_Store
+
+# Android Profiling
+*.hprof
